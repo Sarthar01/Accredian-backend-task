@@ -39,6 +39,7 @@ app.get('/', (req, res) => {
 
 // Endpoint to save referral data
 app.post('/submit-referral', async (req, res) => {
+  res.send('Testing');
   const { name, city, email, number } = req.body;
 
   // Validate the mobile number
